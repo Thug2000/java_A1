@@ -14,5 +14,6 @@ public class Main {
         System.out.println("--- Troisieme TP ---");
         TroisiemTp tp3 = new TroisiemTp();
         tp3.testScanner();
+        tp3.drawCat(5, 7);
     }
 }
