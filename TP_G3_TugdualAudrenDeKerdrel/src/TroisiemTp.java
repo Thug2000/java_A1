@@ -16,12 +16,10 @@ public class TroisiemTp {
 
     public void drawCat(int height, int width) {
 
-        // ears and top of the head
         System.out.print("|\\");
         printCharLoop(width - 4, '-');
         System.out.println("/|");
 
-        // middle of the head and eye
         for (int i = 1; i < height - 1; i++) {
             System.out.print("|");
             if (i == height / 2) {
@@ -36,7 +34,6 @@ public class TroisiemTp {
             System.out.println("|");
         }
 
-        // bottom of the head
         System.out.print(" \\_");
         printCharLoop(width - 6, '^');
         System.out.println("_/ ");
