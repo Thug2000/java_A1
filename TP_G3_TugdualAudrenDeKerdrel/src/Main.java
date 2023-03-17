@@ -35,9 +35,10 @@ public class Main {
         System.arraycopy(tp5.tableau, 0, tableauBulle, 0, tp5.size);
         System.arraycopy(tp5.tableau, 0, tableauQuick, 0, tp5.size);
         System.arraycopy(tp5.tableau, 0, tableauJava, 0, tp5.size);
-        float time = tp5.getTimeTri("java", tableauJava);
+        float time = tp5.getTimeTri("bulle", tableauJava);
         // methode peut être : selection, insertion, bulle, quick, java
         System.out.println("le temps de tri moyen est de " + time + "ms");
+        //todo : optimisation
 
     }
 }

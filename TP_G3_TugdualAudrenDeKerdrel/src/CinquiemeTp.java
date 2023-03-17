@@ -84,6 +84,7 @@ public class CinquiemeTp {
         }
 
         public int[] triBulles(int[] tableau){
+            /* non optimized
             boolean estTrie = false;
             while (!estTrie) {
                 estTrie = true;
@@ -95,7 +96,25 @@ public class CinquiemeTp {
                         estTrie = false;
                         }
                     }
+                }*/
+            int n = tableau.length;
+            boolean swapped;
+            for (int i = 0; i < n-1; i++) {
+                swapped = false;
+                for (int j = 0; j < n-i-1; j++) {
+                    if (tableau[j] > tableau[j+1]) {
+                        // swap arr[j] and arr[j+1]
+                        int temp = tableau[j];
+                        tableau[j] = tableau[j+1];
+                        tableau[j+1] = temp;
+                        swapped = true;
+                    }
                 }
+                // If no two elements were swapped by inner loop, then break
+                // the array is already sorted and the algorithm can exit early
+                if (!swapped)
+                    break;
+            }
             return tableau;
         }
 
