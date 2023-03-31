@@ -3,9 +3,9 @@ import java.time.Instant;
 
 public class Main {
     public static void main(String[] args) {
-        //System.out.println("--- Premier TP ---");
-        //PremierTp tp1 = new PremierTp();
-        //tp1.somme();
+        System.out.println("--- Premier TP ---");
+        PremierTp tp1 = new PremierTp();
+        tp1.somme();
         //tp1.division();
         //tp1.volume();
         //tp1.dessin();
@@ -19,7 +19,7 @@ public class Main {
         tp3.testScanner();
         tp3.drawCat(5, 7);*/
 
-        System.out.println("--- Cinquieme TP ---");
+        /*System.out.println("--- Cinquieme TP ---");
 
         CinquiemeTp tp5 = new CinquiemeTp();
         tp5.initialiserTableau();
@@ -38,7 +38,7 @@ public class Main {
         float time = tp5.getTimeTri("bulle", tableauJava);
         // methode peut être : selection, insertion, bulle, quick, java
         System.out.println("le temps de tri moyen est de " + time + "ms");
-        //todo : optimisation
+        //todo : optimisation*/
 
     }
 }
